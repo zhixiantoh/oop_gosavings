@@ -1,0 +1,50 @@
+<header id='headerrr'>
+    <h1 id="gosavings">GoSavings</h1>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id='lofin' id='allbut'>Login</button>
+</header>
+
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    </div>
+
+   <div class="containerr">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id='username' class="thirdinput"required>
+	<br>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id='password'class="thirdinput" required>
+
+    <button id='allbut' type="button" class="login-button" id='loggin' onclick="retrieveuserinfo()" >Login</button>
+<br>
+      <input type="checkbox" checked="checked"> Remember me
+      <span class="psww">Forgot <a href="#"onclick="myFunction()">password?</a></span>
+    </div>
+
+    <div id="myDIV">
+<h4 align="center" ><b>Security Question:</b></h4>
+                    <div id="dropdown">
+                        <select id="sqq">
+                            <option value="nickname">What is your nickname?</option>
+                            <option value="food">What is your Favourite food?</option>
+                            <option value="country">Which country would you like to travel to?</option>
+                            <option value="pet_name">What is the name of ur pet?</option>
+                        </select>
+						<input type="text" placeholder="Enter Your Answer" name="ans" id="secondinput" style="margin-left:10px;" required>
+
+    <h4 align="center"><b>Your Email:</b></h4>
+           <input type="text" placeholder="Enter Email" name="email" id="secondinput" required style="margin-left:50px;">
+                    </div>
+
+
+<button type="submit" style="margin-left:40px; width:70%;" id='allbut' value="Submit">Submit</button>
+</div>
+
+
+
+  </form>
+</div>

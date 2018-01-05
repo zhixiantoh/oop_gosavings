@@ -1,0 +1,136 @@
+h1{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p{
+    font-size:170%;
+}
+
+#past {
+    background-color: lightgrey;
+    width: 450px;
+    padding: 10px;
+    font-size:125%;
+}
+
+#Row
+{
+    display: table;
+    width: 105%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+#Column
+{
+    display: table-cell;
+    background-color: lightgrey;
+    padding: 10px;
+    font-size:125%;
+
+}
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+#pbar{
+    padding: 10px;
+}
+
+#progress1 {
+ width: 1000px;
+ border: 1px solid black;
+ position: relative;
+ padding: 3px;
+    z-index:-1;
+}
+
+#percent1 {
+ position: absolute;
+ left: 50%;
+    font-size:120%;
+}
+
+#bar1 {
+ height: 40px;
+ background-color: #337ab7;
+ width: 50%;
+}
+
+#progress2 {
+ width: 1000px;
+ border: 1px solid black;
+ position: relative;
+ padding: 3px;
+    z-index:-1;
+}
+
+#percent2 {
+ position: absolute;
+ left: 50%;
+    font-size:120%;
+}
+
+#bar2 {
+ height: 40px;
+ background-color: #337ab7;
+ width: 10%;
+}
+
+button{
+  margin:auto;
+}
+
+button{
+  margin:auto;
+  display:block;
+}
+
+button{
+  padding:16px 32px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+
+  border:0;
+  font-weight:100;
+}
+button:hover{
+  background: #3B5C76;
+}
+

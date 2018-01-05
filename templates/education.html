@@ -1,0 +1,156 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/edu_travel.css">
+    <link rel="stylesheet" href="static/css/logoutnav.css">
+<link href="static/images">
+     <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+{% endblock %}
+{% block body %}
+     <br>
+    <br>
+    <br>
+    <div id="SavingTitle">
+         <h1><b>Education</b></h1><img src="static/images/SBS_Books_long.png" width="1200" height="170">
+    </div>
+
+
+    <script>
+        function displaydata() {
+            document.getElementById("answer_space").innerHTML="<b>Yes</b> you're interested in saving for education.<br>\n"+
+            "The level of education you are interested in saving: <b>Primary, Secondary, Tertiary (Junior College).</b><br>\n" +
+                "Current age of you/your kid (as of 2017): <b>12</b><br>\n" +
+                "You hope to achieve your goals by: <b>01/01/2020</b><br>\n" +
+                "Amount you intend to put aside(monthly): <b>SGD$200</b><br>\n" +
+                "<br>\n"+
+                "<br>\n"+
+                "<b>Our recommendation: </b><br>\n"+
+                "<b>Total</b> cost for your selection of education level: <b>SGD$3324</b><br>\n" +
+                "Amount we recommend for you to save (monthly) till your due date: <b>SGD$138.50</b><br>\n " +
+                "<br><a href ='/travedupdate' id='Overview'>Click to submit your data! &raquo;</a>"
+            "<br>";
+        }
+        function displaynone() {
+            document.getElementById('askingofQ').style.display='none';
+        }
+
+        function displayall() {
+            document.getElementById('askingofQ').style.display='block';
+        }
+    </script>
+
+        <div id="SavingQues">
+        <hr>
+        <h2 align="center"><b>Saving up for your/your childrens' future education?</b></h2>
+        <hr>
+        <p>Are you interested in saving for education?</p>
+        <input type="radio" name="displayEdu" id="yes" value="yes" checked="checked" onclick="displayall()"> Yes
+        <br><input type="radio" name="displayEdu" id="'no" value="no" onclick="displaynone()"> No
+            <br>
+            <hr>
+            <div id="askingofQ" >
+        <p>1. Which level of education are you interested in saving? </p>
+            <br>
+        <table id="level">
+            <tr>
+                <td><label class="EduCheckbox">Pre-School
+                <input type="checkbox" id="Edu1" checked="checked" value=29,780 ><span class="EduCheck"></span>
+                </label></td>
+
+                <td><label class="EduCheckbox">Primary
+                <input type="checkbox" id="Edu2" value=""><span class="EduCheck"></span>
+                </label></td>
+            </tr>
+
+            <tr>
+                <td><label class="EduCheckbox">Secondary
+                <input type="checkbox" id="Edu3"><span class="EduCheck"></span>
+                </label></td>
+
+                <td><label class="EduCheckbox">Tertiary (ITE)
+                <input type="checkbox" id="Edu4"><span class="EduCheck"></span>
+                </label></td>
+            </tr>
+
+            <tr>
+                <td><label class="EduCheckbox">Tertiary (Junior College)
+                <input type="checkbox" id="Edu5"><span class="EduCheck"></span>
+                </label></td>
+
+                <td><label class="EduCheckbox">Teritary (Polytechnic)
+                <input type="checkbox" id="Edu6" ><span class="EduCheck"></span>
+                </label></td>
+            </tr>
+
+            <tr>
+                <td><label class="EduCheckbox">Tertiary (University)
+                <input type="checkbox" id="Edu7"><span class="EduCheck"></span>
+                </label></td>
+            </tr>
+
+        </table>
+        <br>
+        <hr>
+            <p>2. Current age as of 2017: (yourself/ your kid)</p>
+            <input type="number" id="EduAge" placeholder="Enter Age">
+        <br>
+        <br>
+        <hr>
+            <p>3. When do you hope to achieve your final goal? </p>
+            <input type="date" id="EduDateGoal" value="2020-01-01">
+        <br>
+        <br>
+        <hr>
+            <p>4. How much do you intend to put aside from your savings to education? (monthly)</p>
+            SGD$ <input type="number" id="EduAmount" placeholder="Enter An Amount">
+        <br>
+        <br>
+        <hr>
+            <div id="EstimateTitle">
+            <p><b>Estimated</b> amount for individual education level (Singaporean & PR):</p></div>
+            <div id="estimatedamount">
+                <br>
+                <b>Pre-school (Childcare for 2Years and Kindergarten for 3Years):</b> SGD$29,780 <br><br>
+                <b>Primary (6Years):</b><br>
+                SGD$936 (Singaporean) <br>
+                SGD$10,296 (PR) <br><br>
+                <b>Secondary (4Years):</b><br>
+                SGD$1,200 (Singaporean) <br>
+                SGD$10,560 (PR)<br><br>
+                <b>Pre-University (3years):</b><br>
+                SGD$1,188 (Singaporean) <br>
+                SGD$11,052 (PR)<br><br>
+                <b>University (3years):</b><br>
+                SGD$115,350<br>
+                SGD$55,500 (with MOE Tuition Grant Subsidy)<br><br>
+            </div>
+
+            <br>
+            <br>
+            <a id="MoeFas" href="https://www.moe.gov.sg/docs/default-source/document/initiatives/financial-assistance/files/moe-fas-application-form.pdf"> click here to retrieve MOE Financial Assistance Scheme (FAS) application form. </a>
+            <hr>
+
+
+
+
+        <br>
+        <div id="displayans"><button onclick="displaydata()" id="infotodisplay">click to display your selection before submitting ur data!</button></div>
+        <br>
+        <br>
+            <p id="answer_space"></p>
+        <br>
+        <hr>
+        <br>
+        <br>
+            </div>
+        <a href ="/travel" id="Nextpg"> Go to Travel &raquo;</a>
+          </div>
+
+
+
+        <br>
+        <br>
+        <br>
+
+{% endblock %}
+

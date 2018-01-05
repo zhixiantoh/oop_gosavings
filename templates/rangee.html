@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<script src="static/js/range.js"></script>
+    <link rel="stylesheet" href="static/css/rangee.css">
+   <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+
+{% endblock %}
+{% block body %}
+<br>
+    <br>
+    <hr id="hrr">
+<h1 id="range">-Range to invest in-</h1>
+    <br>
+    <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Suggested Range...</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/piechart">$100-$200(20%)</a>
+    <a href="/piechart">$200-$300(30%)</a>
+    <a href="/piechart">$300-$400(40%)</a>
+
+  </div>
+</div>
+    <hr id="hrr">
+    <br>
+  <h3 id="range1" >OR</h3>
+    <br>
+    <br>
+<hr id="hrr">
+    <div class="text-input">
+  <input type="number" id="input1" placeholder="Enter the amount you want (nearest dollars)">
+  <label for="input1" >$</label>
+  <button type="button" class="login-button" id='button' onclick='myFunction1()' >Submit</button>
+<br>
+<br>
+
+
+
+</div>
+    <hr id="hrr">
+<br>
+        <br>
+{% endblock %}

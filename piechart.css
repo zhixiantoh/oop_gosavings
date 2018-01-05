@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+#piechart1,#piechart2{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+#chart:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    #chart {
+        width: 100%;
+    }
+}
+
+#piehead{
+    font-size:50px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#comparing1{
+    padding: 14px 20px;
+    background-color: #af9195;
+    cursor: pointer;
+    margin: 8px;
+    margin-left:180px;
+    border: none;
+}
+
+
+#comparing2{
+    padding: 14px 20px;
+    background-color: #afa3af;
+    cursor: pointer;
+    margin: 8px;
+    margin-left:250px;
+    border: none;
+}
+
+#companies, #companies2 {
+    width: 100%;
+    text-align: center;
+    background-color: #105c58;
+    margin-top: 10px;
+    height:80px;
+    font-size:20px;
+
+}
+
+#companiesw, #companiesw2{
+    color:white;
+    padding:20px;
+}
+
+#companiess, #companiess2{
+    width:100%;
+    background-color: rgba(194, 195, 195, 0.9);
+    padding:40px 50px ;
+     margin:0px auto;
+}
+#allfooterS{margin-top:700px;}

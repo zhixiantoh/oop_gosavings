@@ -1,0 +1,15 @@
+#allfooterS{
+    text-align:center;
+    background-color: rgb(207, 103, 102);
+    color:black;
+}
+
+#emailid:hover{
+    background-color: #CF6766;
+    box-shadow: 10px 10px 15px rgba(207, 103, 102, 0.39);
+    color:black;
+}
+
+#emailid{
+    color: #200057;
+}

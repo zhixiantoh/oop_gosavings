@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/salaryinput.css">
+ <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+
+{% endblock %}
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <div class="jumbotron text-center">
+       <h1>Help Us Get to know You Better</h1>
+		<h2><form>
+  <table>
+
+    <tr>
+      <td align="right">What is your monthly salary:</td>
+      <td align="left"><input type="number" name="monthlysalary" /></td>
+    </tr>
+
+    <tr>
+      <td align="right">How much do you spend?:</td>
+      <td align="left"><input type="number" name="spend" /><form action="/action_page.php">
+				  <select name="spend">
+					<option value="Weekly">Weekly</option>
+					<option value="Monthly">Monthly</option>
+					<option value="Yearly">Yearly</option>
+				  </select></td>
+    </tr>
+
+    <tr>
+      <td align="right">How much do you save?:</td>
+      <td align="left"><input type="number" name="save" /><form action="/action_page.php">
+				  <select name="spend">
+					<option value="Weekly">Weekly</option>
+					<option value="Monthly">Monthly</option>
+					<option value="Yearly">Yearly</option>
+				  </select></td>
+    </tr>
+
+	<tr>
+      <td align="right">How much do you plan on saving?:</td>
+      <td align="left"><input type="number" name="plansave" /><form action="/action_page.php">
+				 </td>
+    </tr>
+
+	<tr>
+      <td align="right">By When?:</td>
+      <td align="left"><input type="date" name="when" /><td>
+    </tr>
+
+	<tr>
+      <td align="right">How much do you plan on spending?:</td>
+      <td align="left"><input type="number" name="planspend" /><form action="/action_page.php">
+      </td>
+    </tr>
+
+	<tr>
+      <td align="right">By When?:</td>
+      <td align="left"><input type="date" name="when" /><td>
+    </tr>
+
+  </table>
+</form></h2>
+
+		<button id="submit"><a href="/newuser">Submit</a></button>
+	</div>
+    <br>
+{% endblock %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

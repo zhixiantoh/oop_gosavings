@@ -1,0 +1,116 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/edu_travel.css">
+
+<link href="static/images">
+ <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+{% endblock %}
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <div id="SavingTitle2">
+         <h1><b>Holiday/ Travel</b></h1><img src="static/images/travel.png" width="1200" height="170" >
+    </div>
+
+    <script>
+        function displaydata2() {
+            document.getElementById("answer_space2").innerHTML="<b>Yes</b> you're interested in saving for your holiday.<br>\n"+
+            "You're <b>not </b>planning to travel with tour. <b>(free and easy)</b><br>\n"+
+                "Date of your vacation is on: <b>01/02/2018</b>.<br>\n" +
+                "Total amount for the whole trip: <b>SGD$4000</b>.<br>\n" +
+                "Amount that you intend to put aside(monthly): <b>SGD$120</b>.<br>\n" +
+                "Duration of your vacation: <b>7</b> days.<br>\n" +
+                "Budget you plan on using for each day: SGD$ <b>150</b>.<br>\n" +
+                "<br>\n" +
+                "<br>\n" +
+                "<b>Our recommendation:</b><br>\n" +
+                "<b>Total </b>cost for your vacation according to your data: <b>SGD$3000</b>.<br>\n" +
+                "Amount we recommend for you to save (monthly) till your vacation: <b>SGD$1500</b>.<br>\n " +
+                "<br><a href ='/travedupdate' id='Overview'>Click to submit your data! &raquo;</a>"
+            "<br>";
+        }
+        function displaynone2() {
+            document.getElementById('askingofQ2').style.display='none';
+        }
+
+        function displayall2() {
+            document.getElementById('askingofQ2').style.display='block';
+        }
+
+               $(document).ready(function(){
+            $('#Overview2').hide();
+            $('input[type="radio"]').click(function() {
+                if ($(this).attr('value') == 'yes') {
+                    $('#Overview2').hide();
+                }
+                if ($(this).attr('value') == 'no') {
+                    $('#Overview2').show();
+                }
+            });
+        });
+    </script>
+
+        <div id="SavingQues2">
+            <hr>
+        <h2 align="center"><b>Saving up for a vacation with your loved ones?</b></h2>
+            <hr>
+            <p>Are you interested in saving for your holiday?</p>
+        <input type="radio" name="displayTravel" id="yes" value="yes" checked="checked" onclick="displayall2()"> Yes
+        <br><input type="radio" name="displayTravel" id="'no" value="no" onclick="displaynone2()"> No
+            <br>
+            <hr>
+            <div id="askingofQ2">
+            <p>1. Are you planning/ planned to travel with tour or 'free and easy'?</p>
+            <select id='TravelType' name="Travel">
+                <option value="Tour">Tour</option>
+                <option value="FreeEasy">Free and Easy</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+        <p> 2.Date of vacation: </p>
+        <input type="date" id="TravelDate" value="2018-02-01">
+            <br>
+            <br>
+            <hr>
+        <p>3. Total amount for the whole trip: </p>
+        SGD$ <input type="number" id="allamt" placeholder="Enter an amount">
+            <br>
+            <br>
+            <hr>
+        <p>4. How much are you planning to put aside from your savings to travel? (monthly)</p>
+        SGD$ <input type="number" id="TravelAmount" placeholder="Enter an amount">
+            <br>
+            <br>
+            <hr>
+        <p>5. Duration of the vacation:(days)</p>
+        <input type="number" id="VacationDays" placeholder="Enter number of days">
+            <br>
+            <br>
+            <hr>
+        <p>6. Budget you plan to spend for each day:</p>
+        SGD$ <input type="number" id="budget" placeholder="Enter an amount">
+            <br>
+            <br>
+            <hr>
+        <br>
+        <div id="displayans2"><button onclick="displaydata2()" id="infotodisplay2">click to display your selection before submitting ur data!</button></div>
+        <br>
+        <br>
+            <p id="answer_space2"></p>
+        <br>
+        <hr>
+        <br>
+        <br>
+            </div>
+        <a href ="/education" id="Previouspg"> &laquo; Go back to Education Page </a>
+        <a href ="/travedupdate" id='Overview2'>Click to overview all your details! &raquo;</a>
+        </div>
+        <br>
+        <br>
+        <br>
+
+{% endblock %}
+

@@ -1,0 +1,180 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/piechart.css">
+
+     <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+{% endblock %}
+{% block body %}
+ <br>
+    <br>
+    <br>
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawUsersChart);
+        google.charts.setOnLoadCallback(drawSuggestionChart);
+
+        function drawUsersChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string','Types');
+            data.addColumn('number','Amount');
+            data.addRows([
+                ['Savings',4],
+                ['Spending',3],
+                ['Investment', 2]
+            ]);
+
+            var kinds = {'title':'Piechart on how much you prefer to split up your money',
+            'width':650, 'height':500};
+
+            var chart = new google.visualization.PieChart(document.getElementById('users_chart_div'));
+                chart.draw(data, kinds);
+                }
+
+            function drawSuggestionChart() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('string','Types');
+            data.addColumn('number','Amount');
+            data.addRows([
+                ['Savings',3],
+                ['Spending', 5],
+                ['Investment', 2]
+                ]);
+            var kinds = {'title':'Piechart on how much we recommend you to split up your money',
+            'width':650, 'height':500};
+
+        // Display the chart inside the <div> element with id="piechart1"
+            var chart = new google.visualization.PieChart(document.getElementById('suggested_chart_div'));
+                chart.draw(data, kinds);
+
+            }
+    </script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('#companies').show();
+            $('#companies2').hide();
+            $('button[type="button"]').click(function() {
+                if ($(this).attr('value') == 'comparing1') {
+                    $('#companies').show();
+                    $('#companies2').hide();
+                }
+                if ($(this).attr('value')=='comparing2') {
+                    $('#companies2').show();
+                    $('#companies').hide();
+                }
+            });
+        });
+
+
+
+
+    </script>
+
+</head>
+<div id="piehead">
+<h1><b>So Far... </b></h1></div>
+    <body>
+        <table id="pie">
+            <tr>
+                <td>
+                    <div id="users_chart_div" style="border: 1px solid #ccc">
+                    </div>
+                </td>
+                <td>
+                    <div id="suggested_chart_div" style="border: 1px solid #ccc">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <button onclick="displaycom()" type="button" id="comparing1" value="comparing1">Compare companies according to your preference.</button>
+        <button onclick="displaycom2()" type="button" id="comparing2" value="comparing2">Compare companies according to what we suggest to you.</button>
+
+
+    <div id="companies">
+        <h1 id="companiesw">Companies that we recommended to you according to your preference:</h1>
+    <hr>
+        <div id="companiess">
+<ul>
+        <h2>
+            eTiQa
+        </h2>
+
+        <a href="https://www.etiqa.com.sg/personal/life-insurance/savings-retirement/easy-save-series/eeasy-save/">eEASY save</a>
+        <li>114% capital guaranteed</li>
+        <li>Best guaranteed return at 2.23% p.a. </li>
+        <li>Buying process:Directly online</li>
+        <li>Transparent purchase with immediate approval</li>
+        <li>Policy term: 6years</li>
+        </ul>
+<ul>
+           <h2>
+            AVIVA
+        </h2>
+        <a href="https://www.aviva.com.sg/en/savings/my-savings-plan/#key-benefits">MySavingsPlan</a>
+        <li>10 to 25 years to suit your savings goals</li>
+        <li>100% Capital Guaranteed</li>
+        <li>Guaranteed lumpsum payout plus potential bonuses</li>
+
+    </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="companies2">
+        <h1 id="companiesw2">Companies that we recommend to you according to our recommendation:</h1>
+    <hr>
+        <div id="companiess2">
+<ul>
+        <h2>
+            Great Eastern
+        </h2>
+
+        <a href="https://www.etiqa.com.sg/personal/life-insurance/savings-retirement/easy-save-series/eeasy-save/">eEASY save</a>
+        <li>114% capital guaranteed</li>
+        <li>Best guaranteed return at 2.23% p.a. </li>
+        <li>Buying process:Directly online</li>
+        <li>Transparent purchase with immediate approval</li>
+        <li>Policy term: 6years</li>
+        </ul>
+<ul>
+           <h2>
+            Prudential
+        </h2>
+        <a href="https://www.aviva.com.sg/en/savings/my-savings-plan/#key-benefits">MySavingsPlan</a>
+        <li>10 to 25 years to suit your savings goals</li>
+        <li>100% Capital Guaranteed</li>
+        <li>Guaranteed lumpsum payout plus potential bonuses</li>
+
+    </ul>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="allfooterS">
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+{% endblock %}

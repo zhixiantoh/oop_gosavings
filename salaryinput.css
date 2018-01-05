@@ -1,0 +1,30 @@
+body{
+	background-color:#F2eedc
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: left;
+    padding-top: 16px;
+}
+
+
+h2{
+    margin-left:100px;
+   }
+
+
+input{margin:20px;
+border-radius:5px;
+padding:5px;
+border-color:black;
+margin-top:30px;
+
+}
+
+#submit{
+    font-size:30px;
+}

@@ -1,0 +1,174 @@
+#Row
+{
+    display: table;
+    width: 50%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+#Column
+{
+    display: table-cell;
+    padding: 10px;
+    font-size:125%;
+
+}
+
+p{
+    font-size:170%;
+}
+
+#saveheading{
+    font-size:150%;
+}
+
+#saveheading1{
+    font-size:150%;
+}
+
+th{
+    font-size:150%;
+}
+
+td{
+    font-size:125%;
+}
+
+#pbar{
+    padding: 10px;
+}
+
+#progress3 {
+ width: 1000px;
+ border: 1px solid black;
+ position: relative;
+ padding: 3px;
+}
+
+#percent3 {
+ position: absolute;
+ left: 50%;
+    font-size:120%;
+}
+
+#bar3 {
+ height: 40px;
+ background-color: #337ab7;
+ width: 80%;
+}
+
+#progress4 {
+ width: 1000px;
+ border: 1px solid black;
+ position: relative;
+ padding: 3px;
+}
+
+#percent4 {
+ position: absolute;
+ left: 50%;
+    font-size:120%;
+}
+
+#bar4 {
+ height: 40px;
+ background-color: #337ab7;
+ width: 20%;
+}
+
+#past5 {
+    margin:auto;
+    background-color: lightgrey;
+    width: 1000px;
+    padding: 10px;
+}
+
+#edu{
+  display:block;
+}
+
+#edu{
+  padding:10px 20px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+
+  border:0;
+  font-weight:100;
+}
+
+#edu:hover{
+  background: #3B5C76;
+}
+
+
+
+#travel{
+  display:block;
+}
+
+#travel{
+  padding:10px 20px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+
+  border:0;
+  font-weight:100;
+}
+
+#travel:hover{
+  background: #3B5C76;
+}
+
+#progressb{
+  display:block;
+}
+
+#progressb{
+  padding:10px 20px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+
+  border:0;
+  font-weight:100;
+}
+#progressb:hover{
+  background: #3B5C76;
+}
+
+
+
+#historyb{
+  padding:10px 20px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+
+  border:0;
+  font-weight:100;
+}
+#historyb:hover{
+  background: #3B5C76;
+}
+
+
+
+
+#investb{
+  padding:10px 20px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+
+  border:0;
+  font-weight:100;
+}
+#investb:hover{
+  background: #3B5C76;
+}

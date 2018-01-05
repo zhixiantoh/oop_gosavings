@@ -1,0 +1,132 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/afterupdate.css">
+
+<script src="static/js/afterupdate.js"></script>
+      <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+{% endblock %}
+{% block body %}
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div id="pbar">
+<p>Savings:</p>
+    <div id="progress3">
+        <span id="percent3">80%</span>
+        <div id="bar3"></div>
+    </div>
+
+    <br><br>
+
+    <p>Spendings:</p>
+    <div id="progress4">
+        <span id="percent4">20%</span>
+        <div id="bar4"></div>
+    </div>
+</div>
+    <br><br>
+
+<p>Check progress: </p>
+
+<button id="progressb" onclick="myFunction1()">Here</button>
+
+<br><br>
+
+
+
+<br>
+
+<p>Update/Save Education and Travel, and Learn more about Investment.</p>
+
+
+<div id="Row">
+
+    <div id="Column">
+	<table>
+		<p id="saveheading">Education</p>
+        <button id="edu"><a href="/education">Here</a></button>
+	</table>
+    </div>
+
+    <div id="Column">
+	<table>
+		<p id="saveheading1">Travel</p>
+        <button id="travel"><a href="/travel">Here</a></button>
+	</table>
+    </div>
+
+    <div id="Column">
+	<table>
+		<p id="saveheading2">Investment</p>
+        <button id="investb"><a href="/lshome">Here</a></button>
+	</table>
+    </div>
+
+</div>
+
+<br>
+    <div id="past5">
+        <table style="width:100%">
+            <h2>Past 5 Records:</h2>
+  <tr>
+    <th>Date</th>
+    <th>Salary</th>
+    <th>Saved</th>
+    <th>Spent</th>
+  </tr>
+
+  <tr>
+    <td>13 December 2017</td>
+    <td>$2,000</td>
+    <td>$1,300</td>
+    <td>$700</td>
+  </tr>
+
+  <tr>
+    <td>13 November 2017</td>
+    <td>$2,000</td>
+    <td>$1,200</td>
+      <td>$800</td>
+  </tr>
+
+  <tr>
+    <td>13 October 2017</td>
+    <td>$2,500</td>
+    <td>$1,700</td>
+      <td>$800</td>
+  </tr>
+
+  <tr>
+    <td>13 September 2017</td>
+    <td>$2,000</td>
+    <td>$1,200</td>
+      <td>$800</td>
+  </tr>
+
+  <tr>
+    <td>13 August 2017</td>
+    <td>$1,800</td>
+    <td>$1,000</td>
+      <td>$800</td>
+  </tr>
+
+</table>
+                <br><br>
+
+        <p>View your history.</p>
+
+        <button id="historyb"><a href="history">Here</a></button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

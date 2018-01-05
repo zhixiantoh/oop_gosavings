@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/lshome.css">
+    <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+    <script src="static/js/lshome.js"></script>
+{% endblock %}
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div id="lsinfo">
+    <h1>So... What is <span id="sp">SAVINGS PLAN?</span></h1>
+<hr>
+    <br>
+    A savings plan is a financial product tha
+    t you buy to grow your savings over a fixed period of time. A savings account, on the other hand, is a bank account where you keep excess money that you have. <span id="sp">So don’t confuse it with saving account!</span><br><br>
+Unlike a savings account, where you can withdraw at your discretion, a savings plan is more structured and requires you to commit to the plan that you bought for a fixed timeframe.
+
+    <br><br>The sooner you start saving, and the more often you save, the better. Time works to your advantage, which is why <span id="sp">START NOW!</span>
+
+    <button class="button1"><a href="http://127.0.0.1:5000/range">Click Here To Try Out!</a></button>
+
+
+<hr>
+
+<div id='smallbox'>
+<span id='ins'>If you have bought an insurance...  </span>
+<hr>
+&nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Enter the amount you need to pay monthly
+so we can compute your savings:
+<br>
+<br>
+<input type="number" name="usrname" id='lsinput'><hr>
+
+  <input type="submit" value="Submit" id='submitt'>
+
+
+
+    </div>
+</div>
+    <br>
+    <br>
+
+{% endblock %}

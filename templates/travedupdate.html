@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+{% block title %}
+<title>Travel & Edu updates</title>
+{% endblock %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/navb.css">
+    <link rel="stylesheet" href="static/css/travedupdate.css">
+ <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+{% endblock %}
+{% block body %}
+<br>
+    <br>
+    <br>
+<br>
+
+<h1 id="traveduhead">Travel / Education update:</h1>
+
+<div class="container">
+  <h2>Savings:</h2>
+    <br>
+    <br>
+  <div id="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+        Investment<br>70%
+    </div>
+    <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+      Travel<br>20%
+    </div>
+    <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+      Education<br>30%
+    </div>
+  </div>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Spendings:</h2>
+        <br>
+    <br>
+ <div id="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" style="width:20%;">
+   <br>20%
+    </div>
+
+ </div>
+
+</div>
+
+
+<button type="button" id="next"><a href="http://127.0.0.1:5000/overview">Next</a></button>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+{% endblock %}

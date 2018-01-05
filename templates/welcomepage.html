@@ -1,0 +1,132 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/welcomepage.css">
+<script src="static/js/welcomepage.js"></script>
+  <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+{% endblock %}
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Welcome Michelle Teo!</h1>
+
+    <h2> -- days to the end of your Education goal</h2>
+    <h2> -- days to the end of your Travel goal</h2>
+    <br><br>
+
+    <p>Past Records:</p>
+    <div id="past">
+        During your last log in(13 November 2017):<br><br>
+        You have saved: $1,300<br><br>
+        You have spent: $700<br><br>
+    </div>
+
+    <br><br>
+
+    <div id="pbar">
+    <p>Savings:</p>
+    <div id="progress1">
+        <span id="percent1">50%</span>
+        <div id="bar1"></div>
+    </div>
+
+        <br><br>
+
+    <p>Spendings:</p>
+    <div id="progress2">
+        <span id="percent2">10%</span>
+        <div id="bar2"></div>
+    </div>
+    </div>
+
+    <br><br>
+<div id="Row">
+
+    <div id="Column">
+	<table>
+		<tr>
+        Update your salary:<br><br>
+		</tr>
+
+		<tr>
+			<td align="right"> Current Salary:<br><br></td>
+			<td align="left"><input type="number" name="current"><br><br></td>
+		</tr>
+
+		<tr>
+			<td align="right">Bonus (if any):<br><br></td>
+			<td align="left"><input type="number" name="bonus"><br><br></td>
+        </tr>
+
+		<tr>
+			<td align="right">Deduction (if any):<br><br></td>
+			<td align="left"><input type="number" name="deduct"><br><br></td>
+        </tr>
+
+		<tr>
+			<td align="right">Total:<br><br></td>
+			<td align="left">----<br><br></td>
+		</tr>
+	</table>
+    </div>
+
+    <div id="Column">
+	<table>
+		<tr>
+        Tell us your progress: <br><br>
+		</tr>
+
+		<tr>
+			<td align="right">How much did you save: <br><br></td>
+			<td align="left"><input type="number" name="saving"><br><br><td>
+		</tr>
+		<tr>
+			<td align="right">How much did you spend: <br><br></td>
+			<td align="left"><input type="number" name="spending"><br><br></td>
+		</tr>
+
+	</table>
+
+	<table>
+				<form>
+              <div class="multiselect">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        What did you spend on?:
+						<select>
+                            <option>Select an option</option>
+                          </select>
+                          <div class="overSelect"></div>
+                        </div>
+
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />Groceries</label>
+                          <label for="two">
+                            <input type="checkbox" id="two" />Transportation</label>
+                          <label for="three">
+                            <input type="checkbox" id="three" />Others</label>
+                    </div>
+              </div>
+        </form>
+	</table>
+    </div>
+    <br><br><br><br><br><br>
+    <button> <a href="afterupdate">Update</a></button>
+
+</div>
+
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+{% endblock %}

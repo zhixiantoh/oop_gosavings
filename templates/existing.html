@@ -1,0 +1,205 @@
+{% extends 'layout.html' %}
+{% block title %}
+<title>Homepage</title>
+{% endblock %}
+{% block additionalscripts %}
+ <script src="static/js/logoutnav.js"></script>
+      <link rel="stylesheet" href="static/css/logoutnav.css">
+
+    <link rel="stylesheet" href="static/css/existing.css">
+<link rel="stylesheet" href="static/css/newuser.css">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+{% endblock %}
+{% block body %}
+
+    <div id="overall">
+<div id="user">
+    <div id="apple">
+        <div style="margin-left: 40%;
+    margin-right: 40%;">
+             <img id="normal" src="/static/images/user.png" style="width:200px;height:200px;"></div>
+        <div>
+                <h1 id="name">Ms Michelle Teo</h1>
+     <h2 id="info">Today's Date: 13 December 2017</h2>
+                    <button type="button" id="update"><a href="http://127.0.0.1:5000/welcome">Update Information</a></button></div>
+    </div>
+
+<div style=" display: -webkit-inline-box;">
+                <div class="euser" style="width:40%; margin-top:20%;">
+                  <h1>Savings:</h1>
+
+                        <div id="square">
+                                <b>Savings for future use set as: <p id="line">$1000</p></b>
+                          <br>
+                            <b>Amount of savings we recommend you to save:<p id="line">$900</p></b>
+                            <br>
+
+                                <b>Amount of money you have saved:<p id="line">$600</p></b>
+
+                               <br>
+                                <b>Amount left to save:<p id="line">$400</p></b>
+                        </div>
+
+                </div>
+
+
+                <br>
+                    <br>
+                    <br>
+
+                <div class="euser" style="width:40%;margin-top:20%; margin-left:20%;">
+                              <h1>Investment:</h1>
+
+                        <div id="square">
+                                    <b>Savings for investment set as:<p id="line">$1300</p></b>
+
+                                  <br>
+                            <b>Amount  of savings we recommend you to save:<p id="line">$1420</p></b>
+                            <br>
+                                    <b>Amount of money you have saved:<p id="line">$1000</p></b>
+
+                                       <br>
+                                             <b>Amount left to save:<p id="line">$300</p></b>
+
+
+                        </div>
+                 </div>
+</div>
+
+    <div  style="display:-webkit-inline-box;">
+
+
+                <div class="euser" style="width:40%;  margin-top:20%;">
+                                      <h1>Travel [Monthly]:</h1>
+
+                         <div id="square">
+                          <b>Savings for Travel set as:<p id="line">$120</p></b>
+
+                             <br>
+                             <b>Amount of savings we recommend you to save:<p id="line">$150</p></b>
+                             <br>
+                             <b>Amount of money you have saved:<p id="line">$50</p></b>
+                             <br>
+                          <b>Amount left to save:<p id="line">$70</p></b>
+
+                            </div>
+
+                 </div>
+
+                     <br>
+                      <br>
+                         <br>
+
+            <div class="euser" style="width:40%; margin-top:20%; margin-left: 20%;">
+                     <h1>Education [Monthly]:</h1>
+
+                       <div id="square">
+                           <b>Savings for Education set as:<p id="line">$200</p></b>
+
+                      <br>
+                           <b>Amount of savings we recommend you to save:<p id="line">$138.50</p></b>
+                           <br>
+                           <b>Amount of money you have saved:<p id="line">$86</p></b>
+
+                           <br>
+                           <b>Amount left to save:<p id="line">$114</p></b>
+
+                     </div>
+            </div>
+
+
+
+
+    </div>
+<br>
+    <br>
+    <br>
+<br>
+    <br>
+    <h1>Updates on Investment Life Savings Plan:</h1>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img id="image" src="/static/images/update.png">
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="button" ><a href="http://127.0.0.1:5000/lshome">Go to Life Savings Plan page</a></button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>Take a look at your progress!</h1>
+    <br>
+    <br>
+
+    <div class="container">
+  <h2>Savings:</h2>
+
+    <br>
+  <div id="overview">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+
+    </div>
+  </div>
+
+ <h2>Spendings:</h2>
+    <br>
+  <div id="overview">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+
+    </div>
+  </div>
+
+ <h2>Investment:</h2>
+    <br>
+  <div id="overview">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+
+    </div>
+  </div>
+
+<h2>Travel:</h2>
+
+    <br>
+  <div id="overview">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+
+    </div>
+  </div>
+
+<h2>Education:</h2>
+
+    <br>
+  <div id="overview">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+
+    </div>
+  </div>
+
+</div>
+    <br>
+    <br>
+
+    <button type="button" id="update"><a href="http://127.0.0.1:5000/overview">View More Details</a></button>
+
+
+    <form method="GET" id="my_form"></form>
+
+</div>
+
+</div>
+</div>
+    </div>
+
+{% endblock %}

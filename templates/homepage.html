@@ -1,0 +1,165 @@
+{% extends 'layout1.html' %}
+{% block title %}
+<title>GoSavings</title>
+{% endblock %}
+{% block additionalscripts %}
+<script src="static/js/loginnav.js"></script>
+<link rel="stylesheet" href="static/css/homepage1.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/loginnav.css">
+<link rel="stylesheet" href="static/css/register.css">
+    <link rel="stylesheet" href="static/css/newuser.css">
+
+    <script src="static/js/loginnav.js"></script>
+
+<link rel="stylesheet" href="static/css/salaryinput.css">
+
+
+{% endblock %}
+{% block body %}
+    <br>
+
+
+    <img id="image1" src="/static/images/coinnn.jpg" style="width:100%; height:700px;" >
+    <img id="image2" src="/static/images/LOGOO.PNG" style="margin-top: 5%;">
+<br>
+    <br>
+    <div>
+        <h1 class="mainTitle">ABOUT US</h1>
+    </div>
+
+
+    <div id ="home">
+    <h2 id="intro">No matter where you are in life, you'll have extreme financial goals & dreams. GoSavings is a full Savings design company from the heart of Singapore that helps you keep track of your savings, as well as expenses in different aspects. We provide aid to new users to learn more about investment plans such as the Life Savings Plan.</h2>
+
+    <br>
+    <br>
+    <br>
+
+    <h3>Facing any of these problems?</h3>
+
+    <br>
+    <br>
+        <br>
+
+    <table style="width:100%" class="table">
+
+    <caption class="caption">Problem 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Problem 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Problem 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Problem 4</caption>
+    <tr class="word"><th>I need money!<br>But i do not know how to save</th><th>Investing is too complicated</th><th>I want to save up for education purposes too!</th><th>I have a travel budget...</th></tr><tr><td><img src="/static/images/savingg.png" style="width:150px;height:150px;bottom:0px;"></td><td><img src="/static/images/investt.png" style="width:150px;height:150px;bottom:0px;"></td><td><img src="/static/images/eduu.png" style="width:150px;height:150px;bottom:0px;"></td><td><img src="/static/images/travelll.png" style="width:150px;height:150px;bottom:0px;"></td>
+    </tr>
+    <tr class="others"><td>Here in our website we'll help you calculate how much money to put aside to save base on your income and expenses.</td><td>Not only do we provide Savings service, you can rely on our guided information on Life Savings Plan to decide on which company to invest in.</td><td>Other than helping you keep track of your savings and expenditures, we can help you put aside money for education purposes!</td><td>Planning to travel? We provide you suggestions based on your budget!</td>
+    </tr>
+
+    </table>
+    </div>
+    <br>
+
+    <button id="advertise" onclick="document.getElementById('Cal').style.display='block'" style="width:auto;">Give our service a try!</button>
+
+    <div id="Cal">
+
+  <form id="Cal-content animate" action="/action_page.php">
+
+        <div id="calculate">
+            <label id="ask"><b>Total Salary:</b></label>
+            <input type="text" placeholder="Enter your salary" name="salary" required>
+            <br>
+            <br>
+            <label id="ask"><b>Spendings:</b></label>
+            <input type="text" placeholder="Enter your spendings" name="spendings" required>
+            <br>
+            <br>
+            <label id="ask"><b>Savings:</b></label>
+            <input type="text" placeholder="Enter your savings" name="savings" required>
+            <br>
+            <br>
+            <label id="ask"><b>How much do you intend to save?</b></label>
+            <input type="text" placeholder="Enter Amount" name="insave" required>
+            <br>
+            <br>
+            <button type="button" id="formbutton">Calculate Savings</button>
+            <br>
+            <br>
+            <label id="ask"><b>You should save: $200</b></label>
+
+            <br>
+            <br>
+            <br>
+
+
+    <div id="calculating" style="background-color:white">
+      <button type="button" onclick="document.getElementById('Cal').style.display='none'" id="closebutton">Close</button>
+    </div>
+        </div>
+  </form>
+    </div>
+
+<script>
+// Get the modal
+var modalCAL = document.getElementById('Cal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modalCAL) {
+        modalCAL.style.display = "none";
+    }
+}
+</script>
+
+    <br>
+        <div class="jumbotron text-center">
+        <h1 id="headinfo">Sign up with us now - </h1>
+            <h3>We can keep track of your progress!</h3>
+
+    <form method="POST" action="">
+        <div id="question">
+            <div id="question1">
+            <h4 align="left"><b>Full Name:</b></h4>
+            <input type="text" placeholder="Full Name" name="name" required>
+
+            <h4 align="left"><b>Birth Date:</b></h4>
+            <input type="text" placeholder="DD/MM/YYYY" name="age" required >
+
+
+           <h4 align="left"><b>Your Email:</b></h4>
+           <input type="text" placeholder="Enter Email" name="email" required>
+
+            </div>
+            <div id ="question2">
+
+                <h4 align="left"><b>Create Password:</b></h4>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <h4 align="left"><b>Repeat Password:</b></h4>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <h4 align="left"><b>Security Question:</b></h4>
+                    <div id="dropdown">
+                        <select>
+                            <option value="nickname">What is your nickname?</option>
+                            <option value="food">What is your Favourite food?</option>
+                            <option value="country">Which country would you like to travel to?</option>
+                            <option value="pet_name">What is the name of ur pet?</option>
+                        </select>
+                    </div>
+                <input type="text" placeholder="Enter Your Answer" name="ans" required>
+            </div>
+                <div id="clearfix">
+
+                    <div id="agree"><input type="checkbox" checked="checked">I agree to the <a href="#" size="20px">Terms & Condition</a>.</div>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" id="signupbtn"><a id="wordsign" href="http://127.0.0.1:5000/salary">Sign Up</a></button>
+
+                </div>
+        </div>
+
+    </form>
+    </div>
+
+
+
+
+{% endblock %}
+
